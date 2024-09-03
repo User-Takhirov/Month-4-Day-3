@@ -6,31 +6,35 @@
     <link rel="stylesheet" href="./output.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="bg-black">
     <div class="container">
-      <form class="form mb-[20px]">
-        <div class="mb-[12px]">
-          <input
-            name="first_name"
-            class="bg-green-300 p-4 border border-blue-400 inputs"
-            type="text"
-          />
+      <form class="form mb-[20px] flex justify-center items-center">
+        <div
+          class="w-[700px] h-[300px] gap-[10px] flex justify-center mt-[100px] items-center"
+        >
+          <div class="mb-[12px]">
+            <input
+              name="first_name"
+              class="bg-green-300 p-4 border border-blue-400 inputs"
+              type="text"
+            />
+          </div>
+          <div class="mb-[12px]">
+            <input
+              name="address"
+              class="bg-blue-300 p-4 border border-blue-400 inputs"
+              type="text"
+            />
+          </div>
+          <button class="py-[18px] text-white px-4 bg-red-600 rounded-[10px] mt-[-13px]">
+            send
+          </button>
         </div>
-        <div class="mb-[12px]">
-          <input
-            name="address"
-            class="bg-blue-300 p-4 border border-blue-400 inputs"
-            type="text"
-          />
-        </div>
-        <button class="p-4 bg-red-600">send</button>
       </form>
 
-      <div class="cards"></div>
+      <div class="mt-[25px] cards"></div>
     </div>
-    <div class="container">
-      
-    </div>
+    <div class="container"></div>
     <script src="./index.js"></script>
   </body>
 </html>

@@ -8,11 +8,15 @@ const render = () => {
   cards.innerHTML = data
     .map(
       (item) => `
-    <div class=" border border-red-500 p-4 rounded-md  bg-white">
-      <h1 class="font-bold text-[32px]">${item.first_name}</h1>
-      <p>${item.address}</p>
-      <button onclick="editItem(${item.id})" class="bg-green-500">edit</button>
-      <button onclick="deleteItem(${item.id})" class="bg-red-500">delete</button>
+    <div class=" border  p-4 rounded-md flex justify-between items-center  bg-white mb-[10px] ">
+    <div>
+    <h1 class="font-bold text-[32px]">${item.first_name}</h1>
+    <p class="font-bold mb-[10px]">${item.address}</p>
+    </div>
+      <div>
+      <button onclick="editItem(${item.id})" class="bg-green-500 p-4 rounded-md text-white">edit</button>
+      <button onclick="deleteItem(${item.id})" class="bg-red-500 p-4 rounded-md text-white">delete</button>
+      </div>
     </div>
     `
     )
